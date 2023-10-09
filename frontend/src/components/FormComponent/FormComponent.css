@@ -1,0 +1,78 @@
+.form-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.form-component__form {
+  width: 100%;
+  max-width: 396px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-component__title {
+  color: #FFF;
+  font-size: 24px;
+  font-family: 'Inter', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+@media screen and (max-width: 520px) {
+  .form-component__title {
+    text-align: center;
+  }
+}
+
+.form-component__submit-container {
+  position: relative;
+  width: 100%;
+}
+
+.form-component__submit-error {
+  color: #EE3465;
+  font-size: 14px;
+  font-family: 'Inter', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.form-component__submit-btn {
+  width: 100%;
+  margin: 91px 0 0;
+  padding: 0;
+  border-radius: 3px;
+  background: #4285F4;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Inter', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .form-component__submit-btn {
+    font-size: 12px;
+  }
+}
+
+.form-component__submit-btn:hover {
+  background: #3b77da;
+}
+
+.form-component__submit-btn:disabled {
+  background: #8d8d8d;
+  cursor: initial;
+}
