@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route
             path={MAIN_ROUTE}
-            element={<ConeForm handleConeFormSubmit={handleConeFormSubmit}/>}
+            element={<ConeForm handleConeFormSubmit={handleConeFormSubmit} coneParams={coneParams}/>}
           />
           <Route
             path={CONE_ROUTE}

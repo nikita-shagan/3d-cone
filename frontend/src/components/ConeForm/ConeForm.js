@@ -4,12 +4,14 @@ import Input from "../Input/Input";
 import {validateHeight, validateRadius, validateNumberOfSegments} from "../../utils/validation/inputValidations";
 
 
-function ConeForm({ handleConeFormSubmit }) {
+function ConeForm({ handleConeFormSubmit, coneParams }) {
+  const { height = '', radius = '', numberOfSegments = '' } = coneParams;
+
   const form = useFormWithValidation({
     initValues: {
-      height: '',
-      radius: '',
-      numberOfSegments: ''
+      height: height,
+      radius: radius,
+      numberOfSegments: numberOfSegments
     },
     validators: {
       height: validateHeight,
