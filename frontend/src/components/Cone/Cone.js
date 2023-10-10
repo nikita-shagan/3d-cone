@@ -18,7 +18,7 @@ function Cone({ coneParams }) {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    const geometry = new THREE.ConeGeometry(height, radius, numberOfSegments, 1);
+    const geometry = new THREE.ConeGeometry(radius, height, numberOfSegments, 1);
     const material = new THREE.MeshBasicMaterial({color: 0x1589ab});
     const cone = new THREE.Mesh(geometry, material);
     scene.add(cone);
