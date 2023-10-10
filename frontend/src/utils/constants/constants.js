@@ -1,3 +1,3 @@
-const MAIN_API_URL = 'http://localhost:3001'
+const MAIN_API_URL = 'https://cone.shagan.ru/api'
 
 export { MAIN_API_URL }
